@@ -22,9 +22,10 @@ See subdirectories. Every assignment is located in its own directory with a `REA
 1. Create a private repo.
 2. Add [@TheBestTvarynka](https://github.com/TheBestTvarynka) to collaborators.
 3. Do your task in a separate branch.
-4. Open a new Pull Request into the `main` branch and assign @TheBestTvarynka as reviewer.
+4. Open a new Pull Request into the `main` branch and assign [@TheBestTvarynka](https://github.com/TheBestTvarynka) as reviewer.
 5. Wait until [@TheBestTvarynka](https://github.com/TheBestTvarynka) approves the PR or requests changes.
 6. If the PR is approved, merge it. If not, and changes are requested, then fix the code and tag [@TheBestTvarynka](https://github.com/TheBestTvarynka) again once it's fixed.
+7. Insert link in Classroom in the corresponding task.
 
 ## FAQ
 
