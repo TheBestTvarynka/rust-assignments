@@ -27,14 +27,18 @@ For the `Post` type described above, assume the following behavior in our applic
 ```
 
 Implement this behavior using [typestates idiom](https://yoric.github.io/post/rust-typestate), so that calling `delete()` on `New` post (or calling `deny()` on `Deleted` post) will be a compile-time error.
-Write simple tests for the task.
+**Write simple tests for the task.**
+
+_Place your implementation in the `./part_1-2/src/part_1.rs` file._
 
 ## Part 2
 
 Write a program which deserializes the [following JSON](request.json) into a static `Request` type and prints out its serialization in a TOML format.
 Consider choosing the correct types for data representation.
 
-Prove your implementation correctness with tests.
+**Prove your implementation correctness with tests.**
+
+_Place your implementation in the `./part_1-2/src/part_2.rs` file._
 
 ## Part 3
 
@@ -66,3 +70,5 @@ In the scope of this task, you will implement a simple CLI app for storing and l
 2. Store snippets in any way you found suitable. It can be a single `.json`/`.txt` file. As you want.
 3. You are allowed to use external dependencies, but I recommend keeping it simple.
 4. Be aware that you will work with this app in your future assignments. So, it is in your interest to write clean code :)
+
+_Place your implementation in the `../snippets-app` crate._
