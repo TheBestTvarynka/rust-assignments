@@ -3,13 +3,9 @@
 
 This task aims to give you an experience of improving software correctness by covering data with types.
 
-# Task
-
-This practical assignment consists of three parts:
-
-1 and 2. Solving the training problem.
-
-3. Implementing your own application (using new techniques you learned, of course).
+This practical assignment consists of three parts.
+Parts 1 and 2: solving training problems.
+Part 3: implementing your own application (using new techniques you learned, of course).
 
 ## Part 1
 
