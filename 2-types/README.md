@@ -1,5 +1,5 @@
 
-# Assignment 1: Types.
+# Assignment 2: Types.
 
 This task aims to give you an experience of improving software correctness by covering data with types.
 
@@ -53,10 +53,8 @@ In the scope of this task, you will implement a simple CLI app for storing and l
   echo "if let Some(local_time) = self.local_time else { }" | ./snippets-app --name "Cool Rust pattern"
   # Read code snippet
   ./snippets-app --read "Cool Rust pattern"
-  ```
-  The command above should print:
-  ```
-  if let Some(local_time) = self.local_time else { }
+  # The command above should print:
+  # if let Some(local_time) = self.local_time else { }
   ```
 * Snippet deletion by name. Accept snippet name as CLI argument. Example:
   ```bash
