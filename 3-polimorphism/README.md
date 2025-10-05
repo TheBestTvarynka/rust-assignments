@@ -25,7 +25,9 @@ Prove your implementation correctness with tests.
 
 _Note 1: You **are not allowed** to change the `Storage` traits or `User` struct definition._
 
-_Note 2: Injectable: what does it mean?_ _Injectable_ means that you can inject any `Storage` trait implementation inside `UserRepository` and it will work. Your solutions should have two `UserRepository` types (for example, `UserRepositoryStatic` and `UserRepositoryDynamic`).
+_Note 2: Injectable: what does it mean?_
+
+_Injectable_ means that you can inject any `Storage` trait implementation inside `UserRepository` and it will work. Your solutions should have two `UserRepository` types (for example, `UserRepositoryStatic` and `UserRepositoryDynamic`).
 
 ## Part 2
 
