@@ -29,6 +29,8 @@ _Note 2: Injectable: what does it mean?_
 
 _Injectable_ means that you can inject any `Storage` trait implementation inside `UserRepository` and it will work. Your solutions should have two `UserRepository` types (for example, `UserRepositoryStatic` and `UserRepositoryDynamic`).
 
+_Note 3: Place your implementation in the `./src/main.rs` file._
+
 ## Part 2
 
 Remember the snippets-app from the previous assignment? Good :smiling_imp:. In this part, you will improve the previous snippets app implementation. The list of new requirements:
