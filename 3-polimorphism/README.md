@@ -25,9 +25,7 @@ Prove your implementation correctness with tests.
 
 _Note 1: You **are not allowed** to change the `Storage` traits or `User` struct definition._
 
-_Note 2: Injectable. What does it mean?_
-
-
+_Note 2: Injectable: what does it mean?_ _Injectable_ means that you can inject any `Storage` trait implementation inside `UserRepository` and it will work. Your solutions should have two `UserRepository` types (for example, `UserRepositoryStatic` and `UserRepositoryDynamic`).
 
 ## Part 2
 
@@ -43,3 +41,6 @@ Remember the snippets-app from the previous assignment? Good :smiling_imp:. In t
    | `JSON:/home/pavlo/snippets.json` | The app should use the `/home/pavlo/snippets.json` file to store all code snippets. |
    | `SQLITE:/home/pavlo/snippets.sqlite` | The app should use the `/home/pavlo/snippets.sqlite` as SQLite database file. |
 
+Let me add more context to decrease the confusion :upside_down_face:. SQLite is a simple database that stores all your data in _**one file**_. It doesn’t need a server and works right inside your app. You can use it to save and read information using normal SQL commands.
+
+There are a lot of query builders and ORMs in the Rust ecosystem. I recommend the [`rusqlite`](https://docs.rs/rusqlite) library.
