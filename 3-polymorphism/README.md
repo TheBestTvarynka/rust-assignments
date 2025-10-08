@@ -48,3 +48,10 @@ Remember the snippets-app from the previous assignment? Good :smiling_imp:. In t
 Let me add more context to decrease the confusion :upside_down_face:. SQLite is a simple database that stores all your data in _**one file**_. It doesn’t need a server and works right inside your app. You can use it to save and read information using normal SQL commands.
 
 There are a lot of query builders and ORMs in the Rust ecosystem. I recommend the [`rusqlite`](https://docs.rs/rusqlite) library.
+
+## Self-learn
+
+- https://github.com/rust-lang-ua/rustcamp/blob/master/1_concepts/1_6_dispatch/README.md
+- https://doc.rust-lang.org/reference/items/traits.html#dyn-compatibility
+- https://joshleeb.com/posts/rust-traits-and-trait-objects
+- https://medium.com/digitalfrontiers/rust-dynamic-dispatching-deep-dive-236a5896e49b

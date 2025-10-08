@@ -68,3 +68,16 @@ In the scope of this task, you will implement a simple CLI app for storing and l
 4. Be aware that you will work with this app in your future assignments. So, it is in your interest to write clean code :)
 
 _Place your implementation in the `../snippets-app` crate._
+
+## Self-learn
+
+### New-type pattern
+
+- https://rust-unofficial.github.io/patterns/patterns/behavioural/newtype.html
+- https://fettblog.eu/refactoring-rust-abstraction-newtype/
+
+### Type-state pattern
+
+- https://yoric.github.io/post/rust-typestate/
+- https://cliffle.com/blog/rust-typestate
+- https://www.greyblake.com/blog/builder-with-typestate-in-rust/
