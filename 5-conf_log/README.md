@@ -28,7 +28,7 @@ Options:
 
 _Note 1: Place your implementation in the `./src/main.rs` file._
 
-_Note 2: There is an example of the configuration file you app should be able to parse: [config.toml](./config.toml).
+_Note 2: There is an example of the configuration file you app should be able to parse: [config.toml](./config.toml)._
 
 ## Part 2
 
