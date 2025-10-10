@@ -3,11 +3,11 @@
 
 ## Part 1
 
-Write a simple program which prints out its actual configuration. Configuration should be implemented as a typed hierarchical structure, which is able to parse from a specified file and/or environment variables.
+Write a simple program that prints out its actual configuration. Configuration should be implemented as a typed hierarchical structure, which is able to parse from a specified file and/or environment variables.
 
 The following priority should be applied (in ascending order) when merging:
 
-1. Default values declared directly in Rust sources; (lowest priority)
+1. Default values declared directly in Rust sources (lowest priority)
 2. Values read from TOML file;
 3. Values set by environment variables with CONF_ prefix. (highest priority)
 
@@ -27,6 +27,8 @@ Options:
 ```
 
 _Note 1: Place your implementation in the `./src/main.rs` file._
+
+_Note 2: There is an example of the configuration file you app should be able to parse: ![](./config.toml).
 
 ## Part 2
 
