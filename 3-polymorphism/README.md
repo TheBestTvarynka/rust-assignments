@@ -19,8 +19,8 @@ struct User {
 }
 ```
 
-Implement `UserRepository` type with injectable `Storage` implementation, which can get, add, update and remove `User` in the injected `Storage`.
-Make two different implementations: one should use _dynamic dispatch_ (trait objects) for `Storage` injecting, and the other one should use _static dispatch_ (generics).
+Implement `UserRepository` type with injectable `Storage` implementation, which can get, add, update, and remove `User` in the injected `Storage`.
+Make two different implementations: one should use _dynamic dispatch_ (trait objects) for `Storage` injection, and the other one should use _static dispatch_ (generics).
 Prove your implementation correctness with tests.
 
 _Note 1: You **are not allowed** to change the `Storage` traits or `User` struct definition._
@@ -38,12 +38,12 @@ Remember the snippets-app from the previous assignment? Good :smiling_imp:. In t
 1. I often want to know when I created the snippet. So, here is my request: record the creation time when creating the snippet.
 2. Add a new storage option: [SQLite](https://sqlite.org/index.html) database.
    Your app should read the `SNIPPETS_APP_STORAGE` environment variable and use the storage provider depending on this environment variable content.
-   The `SNIPPETS_APP_STORAGE` value should have the following pattern: `<storage provider name>:<path to file>`. Your app must support two storage providers: `JSON` and `SQLITE`.
+   The `SNIPPETS_APP_STORAGE` value should have the following pattern: `<storage provider name>:<file path>`. Your app must support two storage providers: `JSON` and `SQLITE`.
    Here are a few examples:
    | `SNIPPETS_APP_STORAGE` value example | meaning |
    |-|-|
    | `JSON:/home/pavlo/snippets.json` | The app should use the `/home/pavlo/snippets.json` file to store all code snippets. |
-   | `SQLITE:/home/pavlo/snippets.sqlite` | The app should use the `/home/pavlo/snippets.sqlite` as SQLite database file. |
+   | `SQLITE:/home/pavlo/snippets.sqlite` | The app should use the `/home/pavlo/snippets.sqlite` as the SQLite database file. |
 
 Let me add more context to decrease the confusion :upside_down_face:. SQLite is a simple database that stores all your data in _**one file**_. It doesn’t need a server and works right inside your app. You can use it to save and read information using normal SQL commands.
 
