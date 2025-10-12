@@ -3,7 +3,7 @@
 
 ## Task
 
-For the implementation of your `snippets-app` provide all possible tests you're able to write.
+For the implementation of your `snippets-app`, provide all possible tests you're able to write.
 
 ## Self-learn
 
