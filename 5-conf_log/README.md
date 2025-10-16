@@ -32,18 +32,19 @@ _Note 2: There is an example of the configuration file you app should be able to
 
 ## Part 2
 
-Remember the `snippets-app` from the previous assignment? Good :smiling_imp:. In this part, you will add logging and proper configuring and snippets downloading.
+Remember the `snippets-app` from the previous assignment? Good :smiling_imp:. In this part, you will add logging and proper configuring, and snippets downloading.
 
 - Add logging to the app:
     - Use either the [`log`](https://docs.rs/log/) or [`tracing`](https://docs.rs/tracing) (**preferred**) crate.
     - Log level and log file should be configured using the `SNIPPETS_APP_LOG_LEVEL` and `SNIPPETS_APP_LOG_PATH` environment variables.
-- Implement a new feature for the `snippets-app`: snippets downloading. Add a new CLI option `--download <URL>`. When this option is present, the app will download the snippet by the provided URL instead of reading from `stdin`.
+- Implement a new feature for the `snippets-app`: snippets downloading. Add a new CLI option `--download <URL>`. When this option is present, the app will download the snippet from the provided URL instead of reading from `stdin`.
   Example:
   ```bash
   ./snippets-app --name "minimalistic_tracing_logger" --download "https://gist.githubusercontent.com/TheBestTvarynka/bb2e8fee52abaf3bf1e9b567453d7466/raw/"
   ```
   The command above will create a "minimalistic_tracing_logger" snippet with the content behind this URL.
-  You can use any HTTP client for requests handling, but I recommend using the [`reqwest`](https://docs.rs/reqwest) crate (with the `blocking` feature on because your app is synchronous. Async Rust is out of the scope of the current course).
+  You can use any HTTP client for request handling, but I recommend using the [`reqwest`](https://docs.rs/reqwest) crate (with the `blocking` feature on because your app is synchronous. Async Rust is out of the scope of the current course).
+  **Attention:** if you did not use the [`clap`](https://docs.rs/clap) or any other crate for CLI args handling and did CLI args parsing manually, then rework args parsing using the [`clap`](https://docs.rs/clap) crate.
 
 ## Self-learn
 
