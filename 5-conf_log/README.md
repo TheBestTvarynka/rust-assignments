@@ -44,7 +44,7 @@ Remember the `snippets-app` from the previous assignment? Good :smiling_imp:. In
   ```
   The command above will create a "minimalistic_tracing_logger" snippet with the content behind this URL.
   You can use any HTTP client for request handling, but I recommend using the [`reqwest`](https://docs.rs/reqwest) crate (with the `blocking` feature on because your app is synchronous. Async Rust is out of the scope of the current course).
-  **Attention:** if you did not use the [`clap`](https://docs.rs/clap) or any other crate for CLI args handling and did CLI args parsing manually, then rework args parsing using the [`clap`](https://docs.rs/clap) crate.
+- If you did not use the [`clap`](https://docs.rs/clap) or any other crate for CLI args handling and did CLI args parsing manually, then rework args parsing using the [`clap`](https://docs.rs/clap) crate.
 
 ## Self-learn
 
