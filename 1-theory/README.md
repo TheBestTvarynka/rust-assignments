@@ -5,27 +5,43 @@ This task aims to check your basic knowledge of Rust and gain experience in subm
 
 ## Task
 
-Write answers to the questions below. Please, do not overcomplicate answers. 1-3 sentences are enough. You do not need to write an essay for every question.
+1. Чи є Rust однопоточним чи багатопоточним? Він синхронний чи асинхронний?
+Rust підтримує багатопоточність (multi-threaded) і може працювати як синхронно, так і асинхронно завдяки async/await та бібліотекам типу Tokio.
 
-1. Is Rust single-threaded or multi-threaded? Is it synchronous or asynchronous?
-    - just Google this question :upside_down_face:
-2. What runtime Rust has? Does it use a GC (garbage collector)?
-    - https://news.ycombinator.com/item?id=35756048
-    - https://prev.rust-lang.org/en-US/faq.html#does-rust-have-a-runtime
-3. What static typing means? What are the benefits of using it?
-    - https://www.thecodedmessage.com/posts/strong-typing/
-4. What is immutability? What is the benefit of using it?
-    - https://doc.rust-lang.org/stable/book/ch03-01-variables-and-mutability.html
-5. What are move semantics? What are borrowing rules? What is the benefit of using them?
-    - https://doc.rust-lang.org/stable/book/ch04-00-understanding-ownership.html (the whole section).
-6. What are traits? How are they used? How do they compare to interfaces?
-    - https://doc.rust-lang.org/stable/book/ch10-00-generics.html (the whole section).
-7. What are lifetimes? Which problems do they solve?
-    - https://doc.rust-lang.org/stable/book/ch10-03-lifetime-syntax.html
-8. What are macros? Which problems do they solve?
-    - https://doc.rust-lang.org/stable/book/ch20-05-macros.html
-9. What is the difference between `&String` and `&str` types (or between `&Vec` and `&[u8]` types)? Difference between fat and thin pointers?
-    - https://doc.rust-lang.org/stable/book/ch04-03-slices.html
-    - https://stackoverflow.com/a/57754902
-10. What are static and dynamic dispatches?
-    - https://github.com/rust-lang-ua/rustcamp/blob/master/1_concepts/1_6_dispatch/README.md
+2. Який runtime має Rust? Чи використовує він збирач сміття (GC)?
+Rust не має великого runtime — лише мінімальний системний код.
+Він не використовує збирач сміття (GC), оскільки пам’яттю керує система власності (ownership).
+
+3. Що означає статична типізація? Які її переваги?
+Статична типізація означає, що типи змінних визначаються під час компіляції.
+Це допомагає виявляти помилки раніше та збільшує безпечність коду.
+
+4. Що таке незмінність (immutability)? Яка користь від її використання?
+Незмінність означає, що змінну не можна змінити після створення.
+Це підвищує безпечність і зменшує кількість помилок у багатопоточних програмах.
+
+5. Що таке семантика переміщення (move semantics)? Які правила запозичення (borrowing rules)? Яка користь від них?
+Move semantics — це передача володіння даними замість копіювання.
+Borrowing дозволяє тимчасово отримати доступ до даних без передачі власності.
+Це забезпечує ефективне керування пам’яттю без потреби у GC.
+
+6. Що таке трейти (traits)? Як їх використовують? Чим вони схожі або відрізняються від інтерфейсів?
+Traits — це набір методів, які може реалізувати тип.
+Вони подібні до інтерфейсів, але в Rust їх можна реалізовувати для будь-яких типів, навіть зовнішніх.
+
+7. Що таке час життя (lifetimes)? Які проблеми вони вирішують?
+Lifetimes визначають, як довго посилання залишаються дійсними.
+Вони запобігають висячим посиланням (dangling references) і витокам пам’яті.
+
+8. Що таке макроси? Які проблеми вони вирішують?
+Макроси дозволяють генерувати код під час компіляції.
+Вони допомагають зменшити дублювання коду та спрощують реалізацію шаблонів.
+
+9. У чому різниця між типами &String і &str (або між &Vec і &[u8])? Яка різниця між “товстими” та “тонкими” вказівниками?
+&String — це посилання на об’єкт String, а &str — посилання на зріз (частину рядка).
+Так само &Vec — посилання на вектор, а &[u8] — зріз байтів.
+Товстий (fat) вказівник містить адресу та довжину, а тонкий (thin) — лише адресу.
+
+10. Що таке статичне та динамічне диспетчеризації (static і dynamic dispatch)?
+Статична диспетчеризація — вибір реалізації під час компіляції (impl Trait).
+Динамічна диспетчеризація — вибір реалізації під час виконання програми (dyn Trait).
