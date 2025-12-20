@@ -1,5 +1,4 @@
 use std::marker::PhantomData;
-
 pub struct New;
 pub struct Unmoderated;
 pub struct Published;
@@ -71,3 +70,4 @@ mod tests {
         let _deleted = post.deny();
     }
 }
+
